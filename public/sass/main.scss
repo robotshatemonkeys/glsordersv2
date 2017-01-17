@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// MIXIN
+// -----------------------------------------------------------------------------
+@import "components/mixin-animations";
+// -----------------------------------------------------------------------------
+// FUNCTIONS
+// -----------------------------------------------------------------------------
+@import "components/functions";
+
+
+html,body{
+	width:100%;
+	height:100%;
+	background-color:#000;
+	color:#fff;
+}
+
+.centerMe{
+	position: absolute;
+	top:50%;
+	left:50%;
+	@include translate(-50%,-50%);
+
+}
+
+.centerText{
+	text-align:center;
+	margin:0 auto; 
+}
+
+.index{
+	ul{
+		list-style: none;
+		padding: 0px;
+	}
+}
+
+.install{
+	button{
+		margin-top: 10px;
+		background-color: #3cd3ad;
+		color:#fff;
+		width: 100%;
+	}
+}

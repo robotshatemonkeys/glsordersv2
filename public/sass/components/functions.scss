@@ -1,0 +1,23 @@
+/*============================================================================
+  #Sass FUNCIONS
+==============================================================================*/
+@function color-control($color) {
+  @if (lightness( $color ) > 40) {
+    @return #1c1d1d;
+  }
+  @else {
+    @return #fff;
+  }
+}
+@function adaptive-color($color, $percentage) {
+  @if (lightness( $color ) > 40) {
+    @return darken($color, $percentage);
+  }
+  @else {
+    @return lighten($color, $percentage);
+  }
+}
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
