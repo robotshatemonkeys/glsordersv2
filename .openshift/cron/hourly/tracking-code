@@ -1,0 +1,6 @@
+#!/bin/bash
+hour=$(date +%H)
+if [ $(($hour % 2)) -eq 0 ]; then
+    node ${OPENSHIFT_REPO_DIR}/cron/get-tracking.js
+fi
+
