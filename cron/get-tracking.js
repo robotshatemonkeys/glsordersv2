@@ -51,6 +51,7 @@ c.on('ready',()=>{
     if(filesList.length>0){
       getFile();
     }else{
+      console.log("no files");
       process.exit()
 
     }
