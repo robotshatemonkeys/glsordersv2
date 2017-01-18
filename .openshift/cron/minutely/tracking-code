@@ -1,6 +1,6 @@
 #!/bin/bash
 minute=$(date +%M)
-if [ $(($minute % 2)) -eq 0 ]; then
+if [ $(($minute % 4)) -eq 0 ]; then
     node ${OPENSHIFT_REPO_DIR}/cron/get-tracking.js
 fi
 
