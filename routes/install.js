@@ -61,10 +61,12 @@ router.get('/finish_auth', function(req, res, next) {
 		 			orderUrl=path+credentials.url.order_uri;
 
 			let webhooks=[
-				"webhook": {
-			    "topic": "app/uninstalled",
-			    "address": removeUrl,
-			    "format": "json"
+				{
+					"webhook": {
+				    "topic": "app/uninstalled",
+				    "address": removeUrl,
+				    "format": "json"
+				  }
 			  }  
 			];
 

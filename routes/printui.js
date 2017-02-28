@@ -42,7 +42,7 @@ router.get('/', function(req, res, next) {
 		    access_token: shops.token, //permanent token,
 		    verbose: false
 		  });
-		}
+		});
 
 	  let orders=query_params.ids.join();
  		let query_data={};
