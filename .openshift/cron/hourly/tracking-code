@@ -2,7 +2,6 @@
 hour=$(date +%H)
 echo $hour;
 if [ $(($hour % 2)) -eq 0 ]; then
-		echo "right time";
     node ${OPENSHIFT_REPO_DIR}/cron/get-tracking.js
 fi
 

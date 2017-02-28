@@ -32,12 +32,27 @@ router.get('/finish_auth', function(req, res, next) {
 
   Shopify.exchange_temporary_token(query_params, function(err, data){
 
+  	var update = {
+			name: query_params.shop,
+			token: data.access_token
+	  };
+    var options = {
+      new: true, // return the new doc 
+      upsert: true, // add a new doc if doesn't exit
+      setDefaultsOnInsert: true
+    };
+
   	// SAVE IN DATABASE;
-  	Shop.find({"name":query_params.shop},function(err, shops){
-			new Shop({
-				name: query_params.shop,
-      	token: data.access_token
-			}).save();
+  	Shop.findOneAndUpdate({"name":query_params.shop},update,options,function(err, shops){
+  		if (err) return res.send(500, { error: err });
+			console.log(shops);
+			
+			if(shops==null){
+				new Shop({
+					name: query_params.shop,
+	      	token: data.access_token
+				}).save();
+			}
 
 			let removeUrl=path+credentials.oauth.remove_uri;
 			
