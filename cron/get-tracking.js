@@ -11,7 +11,7 @@ const express           = require('express')
       mongoose          = require('mongoose'),
       credentials = require('../utils/credentials.js'),
       shopifyAPI = require('shopify-node-api'),
-      shopifyRequest  = require('../utils/shopify-request.js'),
+      shopifyUtilities  = require('../utils/shopify-request.js'),
       Client = require('ftp'),
       csv=require('csvtojson'),
       Shop = require('../models/shop.js');
@@ -144,7 +144,7 @@ function loopList(list,orders,index,limit,query,file){
     query.name=list[index];
     Shopify.get("/admin/orders.json",query,function(err,data,headers){ 
       if (err) return res.status(500).send(err).end();
-      if(headers.http_x_shopify_shop_api_call_limit>34) sleep(1000);  
+      shopifyUtilities.sleep(510);
       console.log(data);
       let orderData=data.orders[0];
       if(data.orders.length>0 && orders[orderData.order_number]){
@@ -160,8 +160,8 @@ function loopList(list,orders,index,limit,query,file){
         };
         
         Shopify.put('/admin/orders/'+orderData.id+'/fulfillments/'+fulfillmentID+'.json',pushData,function(err,data,headers){ 
-          if(headers.http_x_shopify_shop_api_call_limit>35) sleep(1000);
           if(err)console.log(err);    
+          shopifyUtilities.sleep(510);
           console.log("SENT:"+index+"/"+limit);
           loopList(list,orders,index+1,limit,query,file);
         });
@@ -173,15 +173,7 @@ function loopList(list,orders,index,limit,query,file){
 }
 
 
-function sleep(milliseconds) {
-  console.log(sleep);
-  var start = new Date().getTime();
-  for (var i = 0; i < 1e7; i++) {
-    if ((new Date().getTime() - start) > milliseconds){
-      break;
-    }
-  }
-}
+
 
 
 // If the connection throws an error

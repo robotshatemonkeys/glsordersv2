@@ -56,10 +56,7 @@ router.get('/finish_auth', function(req, res, next) {
 				}).save();
 			}
 
-			let removeUrl=path+credentials.url.remove_uri,
-		 			priceUrl=path+credentials.url.price_uri,
-		 			orderUrl=path+credentials.url.order_uri;
-
+			let removeUrl=path+credentials.oauth.remove_uri;
 			let webhooks=[
 				{
 					"webhook": {

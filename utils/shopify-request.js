@@ -1,6 +1,14 @@
+const crypto = require('crypto');
+
 module.exports = {
-  callback: function (err, data, headers) {
-		var api_limit = headers['http_x_shopify_shop_api_call_limit'];
-		console.log( api_limit ); // "1/40" 
-  }
+  generateNonce:function() {
+  	return crypto.randomBytes(16).toString('hex');
+	},
+ 	sleep:function(milliseconds) {
+	  var start = new Date().getTime();
+	  var end = start;
+	  while(end < start + milliseconds) {
+	    end = new Date().getTime();
+	  }
+	}
 };   
