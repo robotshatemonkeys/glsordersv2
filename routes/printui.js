@@ -34,14 +34,15 @@ router.get('/', function(req, res, next) {
 
   	if (err) return res.send(500, { error: err });
 		
-
-  	var Shopify = new shopifyAPI({
-		  shop: "blakshop.myshopify.com", // MYSHOP.myshopify.com 
-		  shopify_api_key: credentials.oauth.shopify_api_key, // Your API key 
-	    shopify_shared_secret: credentials.oauth.shopify_shared_secret, // Your Shared Secret
-		  access_token: "568e99326035f1b72cf23d3cf65077b8", //permanent token 
-		  verbose: false
-		});
+		Shop.findOne({"name":"blakshop.myshopify.com"},function(err,shops){
+		  Shopify = new shopifyAPI({
+		    shop: shops.name, // MYSHOP.myshopify.com 
+		    shopify_api_key: credentials.oauth.shopify_api_key, // Your API key 
+		    shopify_shared_secret: credentials.oauth.shopify_shared_secret, // Your Shared Secret 
+		    access_token: shops.token, //permanent token,
+		    verbose: false
+		  });
+		}
 
 	  let orders=query_params.ids.join();
  		let query_data={};

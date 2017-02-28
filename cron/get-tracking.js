@@ -1,62 +1,86 @@
 #!/usr/bin/env node
-const express = require('express'),
+
+const fs                = require('fs'),
+      path              = require('path'),
+      contentTypes      = require('../utils/content-types'),
+      sysInfo           = require('../utils/sys-info'),
+      env               = process.env;
+
+const express           = require('express')
+      mongodb           = require('mongodb'),
+      mongoose          = require('mongoose'),
       credentials = require('../utils/credentials.js'),
       shopifyAPI = require('shopify-node-api'),
       shopifyRequest  = require('../utils/shopify-request.js'),
-      mongoose = require('mongoose'),
       Client = require('ftp'),
       csv=require('csvtojson'),
-      fs = require('fs'),
       Shop = require('../models/shop.js');
-
-
-
-var Shopify = new shopifyAPI({
-  shop: "blakshop.myshopify.com", // MYSHOP.myshopify.com 
-  shopify_api_key: credentials.oauth.shopify_api_key, // Your API key 
-  shopify_shared_secret: credentials.oauth.shopify_shared_secret, // Your Shared Secret 
-  access_token: "6f9351032845a7bb3d45c998276974ce", //permanent token,
-  verbose: false
-});
-
-
 
 let orders={},
     ordersList=[],
     filesList=[];
 
 var fileIndex=0;
-
 var c = new Client();
-
-// connect to FTP GLS
-c.connect({
-  host:'ftp.gls-italy.com',
-  user:'blakshopv17530',
-  password:'3Az4keFa'
-});
+var Shopify;
 
 
-c.on('ready',()=>{
-  c.list(function(err, list) {
-    if (err) throw err;
-    for (var i = 0; i < list.length; i++) {
-      let name=list[i].name;
-      console.log("READ FILE:"+name);
-      if(name.indexOf('Spedizioni')!=-1){
-        filesList.push(name);
-      }
-    } 
-    console.log(filesList.length+" files");
-    if(filesList.length>0){
-      getFile();
-    }else{
-      console.log("no files");
-      process.exit()
-
+let ipaddress = 
+  env.OPENSHIFT_NODEJS_IP,
+  port = env.OPENSHIFT_NODEJS_PORT,
+  mongourl = env.OPENSHIFT_MONGODB_DB_URL + env.OPENSHIFT_APP_NAME,
+  options = {
+    server: {
+      socketOptions: { keepAlive: 1 } 
     }
-  })
-});
+  };
+
+// CONNECT TO MONGO
+if(mongoose.connection.readyState==0){
+  mongoose.connect(mongourl, options);
+}
+
+mongoose.connection.on('connected', function () {  
+  var db=mongoose.connection.db;
+  Shop.findOne({"name":"blakshop.myshopify.com"},function(err,shops){
+
+  Shopify = new shopifyAPI({
+    shop: shops.name, // MYSHOP.myshopify.com 
+    shopify_api_key: credentials.oauth.shopify_api_key, // Your API key 
+    shopify_shared_secret: credentials.oauth.shopify_shared_secret, // Your Shared Secret 
+    access_token: shops.token, //permanent token,
+    verbose: false
+  });
+
+
+  // connect to FTP GLS
+  c.connect({
+    host:'ftp.gls-italy.com',
+    user:'blakshopv17530',
+    password:'3Az4keFa'
+  });
+
+  c.on('ready',()=>{
+    c.list(function(err, list) {
+      if (err) throw err;
+      for (var i = 0; i < list.length; i++) {
+        let name=list[i].name;
+        console.log("READ FILE:"+name);
+        if(name.indexOf('Spedizioni')!=-1){
+          filesList.push(name);
+        }
+      } 
+      console.log(filesList.length+" files");
+      if(filesList.length>0){
+        getFile();
+      }else{
+        console.log("no files");
+        process.exit()
+
+      }
+    })
+  });
+}); 
 
 function getFile(){
   let file=filesList[fileIndex];
@@ -93,7 +117,7 @@ function getFile(){
       }
     })
     .on('error',(err)=>{
-        console.log(err)
+        console.log(err);
         stream.unpipe();
         c.end();
     });
@@ -105,7 +129,7 @@ function getNextFileOrDie(){
   if(fileIndex<filesList.length){
     getFile();
   }else{
-    process.exit()
+    process.exit();
   }
 }
   
@@ -122,7 +146,6 @@ function loopList(list,orders,index,limit,query,file){
       if (err) return res.status(500).send(err).end();
       if(headers.http_x_shopify_shop_api_call_limit>34) sleep(1000);  
       console.log(data);
-
       let orderData=data.orders[0];
       if(data.orders.length>0 && orders[orderData.order_number]){
         let fulfillmentID=orderData.fulfillments[0].id;
@@ -134,7 +157,7 @@ function loopList(list,orders,index,limit,query,file){
             "notify_customer":true,
             "tracking_url":"https://www.gls-italy.com//?option=com_gls&view=track_e_trace&mode=search&numero_spedizione="+orders[orderData.order_number]+"&tipo_codice=nazionale"
          } 
-        }
+        };
         
         Shopify.put('/admin/orders/'+orderData.id+'/fulfillments/'+fulfillmentID+'.json',pushData,function(err,data,headers){ 
           if(headers.http_x_shopify_shop_api_call_limit>35) sleep(1000);
@@ -148,3 +171,37 @@ function loopList(list,orders,index,limit,query,file){
     });
   }
 }
+
+
+function sleep(milliseconds) {
+  console.log(sleep);
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+
+
+// If the connection throws an error
+mongoose.connection.on('error',function (err) {  
+  console.log('Mongoose default connection error: ' + err);
+}); 
+
+// When the connection is disconnected
+mongoose.connection.on('disconnected', function () {  
+  console.log('Mongoose default connection disconnected'); 
+});
+
+
+// If the Node process ends, close the Mongoose connection 
+process.on('SIGINT', function() {  
+  mongoose.connection.close(function () { 
+    console.log('Mongoose default connection disconnected through app termination'); 
+    process.exit(0); 
+  }); 
+}); 
+
+
+
