@@ -15,7 +15,7 @@ var Shopify = new shopifyAPI({
   shop: "blakshop.myshopify.com", // MYSHOP.myshopify.com 
   shopify_api_key: credentials.oauth.shopify_api_key, // Your API key 
   shopify_shared_secret: credentials.oauth.shopify_shared_secret, // Your Shared Secret 
-  access_token: "80a6f518eb1a03c7e84a5baf75c6efb9", //permanent token,
+  access_token: "6f9351032845a7bb3d45c998276974ce", //permanent token,
   verbose: false
 });
 
