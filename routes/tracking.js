@@ -12,26 +12,26 @@ const express = require('express'),
 const router = express.Router();
 var Shopify;
 
+require('crashreporter').configure({
+  mailEnabled: true,
+  mailTransportName: 'SMTP',
+  mailTransportConfig: {
+      service: 'Gmail',
+      auth: {
+          user: "crivellarofederico@gmail.com",
+          pass: "canona700"
+      }
+  },
+  mailSubject: 'advanced.js crashreporter test',
+  mailFrom: 'crashreporter <crivellarofederico@gmail.com>',
+  mailTo: 'info@robotshatemonkeys.com'
+});
+throw new Error('foo');
 
 router.get('/',(req, res,next)=>{
   let query_params =req.query;
 
-  require('crashreporter').configure({
-    mailEnabled: true,
-    mailTransportName: 'SMTP',
-    mailTransportConfig: {
-        service: 'Gmail',
-        auth: {
-            user: "crivellarofederico@gmail.com",
-            pass: "canona700"
-        }
-    },
-    mailSubject: 'advanced.js crashreporter test',
-    mailFrom: 'crashreporter <crivellarofederico@gmail.com>',
-    mailTo: 'info@robotshatemonkeys.com'
-});
-
-throw new Error('foo');
+  
 
 
   Shop.find({"name":"blakshop.myshopify.com"},(err,shops)=>{
