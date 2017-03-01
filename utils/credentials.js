@@ -24,7 +24,15 @@ module.exports = {
 	  mailSubject: 'advanced.js crashreporter test',
 	  mailFrom: 'crashreporter <crivellarofederico@gmail.com>',
 	  mailTo: 'info@robotshatemonkeys.com'
-	}
-
+	},
+	webhooks:[
+		{
+			"webhook": {
+		    "topic": "app/uninstalled",
+		    "address": removeUrl,
+		    "format": "json"
+		  }
+	  }  
+	]
 }
       

@@ -7,6 +7,7 @@ const fs                = require('fs'),
       env               = process.env;
 
 const express           = require('express')
+      crashreporter     =require('crashreporter').configure(credentials.crashmail);
       mongodb           = require('mongodb'),
       mongoose          = require('mongoose'),
       credentials = require('../utils/credentials.js'),
@@ -16,21 +17,6 @@ const express           = require('express')
       csv=require('csvtojson'),
       Shop = require('../models/shop.js');
 
-
-require('crashreporter').configure({
-  mailEnabled: true,
-  mailTransportName: 'SMTP',
-  mailTransportConfig: {
-      service: 'Gmail',
-      auth: {
-          user: "crivellarofederico@gmail.com",
-          pass: "canona700"
-      }
-  },
-  mailSubject: 'advanced.js crashreporter test',
-  mailFrom: 'crashreporter <crivellarofederico@gmail.com>',
-  mailTo: 'info@robotshatemonkeys.com'
-});
 
 
 let orders={},

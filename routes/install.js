@@ -57,15 +57,7 @@ router.get('/finish_auth', function(req, res, next) {
 			}
 
 			let removeUrl=path+credentials.oauth.remove_uri;
-			let webhooks=[
-				{
-					"webhook": {
-				    "topic": "app/uninstalled",
-				    "address": removeUrl,
-				    "format": "json"
-				  }
-			  }  
-			];
+			let webhooks=credentials.webhooks;
 
 			for (let i = 0; i < webhooks.length; i++) {
 				Shopify.post('/admin/webhooks.json',webhooks[i], function(err, data, headers){				
@@ -100,10 +92,6 @@ router.get('/thank-you', function(req, res, next) {
 });
 
 
-
-
-
-
 /*------------------------
 DELETE APP 
 --------------------------*/
@@ -113,6 +101,5 @@ router.post('/delete', function(req, res) {
 	Shop.findOne({"name":name}).remove().exec();	
 	res.end();
 });
-
 
 module.exports = router;
