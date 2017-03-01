@@ -10,6 +10,9 @@ const express = require('express'),
       Shop = require('../models/shop.js'),
       crashreporter=require('crashreporter').configure(credentials.crashmail);
 
+const router = express.Router();
+
+
 router.get('/',(req, res,next)=>{
   let query_params =req.query;
 

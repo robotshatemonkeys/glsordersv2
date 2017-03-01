@@ -1,4 +1,7 @@
-var self = module.exports = {
+const prod='http://glsorders-01shopify.rhcloud.com/',
+			dev='http://localhost:3000/';
+
+module.exports = {
 	oauth: {
 		shopify_api_key: '9f3dc823496745120efebe466e15a44c', // Your API key 
 		shopify_shared_secret: '312594f20fe6b4d3ac0a4a817442c37e', // Your Shared Secret 
@@ -7,8 +10,8 @@ var self = module.exports = {
 		nonce: '' // you must provide a randomly selected value unique for each authorization request 
 	},
 	path:{
-		prod:'http://glsorders-01shopify.rhcloud.com/',
-		dev:'http://localhost:3000/'
+		prod:prod,
+		dev:dev
 	},
 	crashmail:{
 		mailEnabled: true,
@@ -28,7 +31,7 @@ var self = module.exports = {
 		{
 			"webhook": {
 		    "topic": "app/uninstalled",
-		    "address": self.path.prod+'install/delete',
+		    "address": prod+'install/delete',
 		    "format": "json"
 		  }
 	  }  

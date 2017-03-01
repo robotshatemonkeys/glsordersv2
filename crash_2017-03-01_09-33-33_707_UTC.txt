@@ -1,0 +1,621 @@
+Date time: Wed Mar 01 2017 10:33:33 GMT+0100 (CET)
+-----------------------
+execPath: /usr/local/Cellar/node/7.4.0/bin/node
+-----------------------
+argv: /usr/local/Cellar/node/7.4.0/bin/node, /Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/start.js
+-----------------------
+current directory: /Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders
+-----------------------
+env:
+{ TERM_PROGRAM: 'Apple_Terminal',
+  TERM: 'xterm-256color',
+  SHELL: '/bin/bash',
+  TMPDIR: '/var/folders/yv/ld8yxx6d7w3fz_nnjrskllcm0000gn/T/',
+  Apple_PubSub_Socket_Render: '/private/tmp/com.apple.launchd.txY3QXGxhl/Render',
+  TERM_PROGRAM_VERSION: '388',
+  TERM_SESSION_ID: '1214BAA6-2CA1-4593-85CF-42DCED1990AD',
+  USER: 'federicocrivellaro',
+  SSH_AUTH_SOCK: '/private/tmp/com.apple.launchd.yN1TZc7Imq/Listeners',
+  __CF_USER_TEXT_ENCODING: '0x1F5:0x0:0x0',
+  PATH: '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin',
+  PWD: '/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders',
+  XPC_FLAGS: '0x0',
+  XPC_SERVICE_NAME: '0',
+  HOME: '/Users/federicocrivellaro',
+  SHLVL: '1',
+  LOGNAME: 'federicocrivellaro',
+  LC_CTYPE: 'UTF-8',
+  SECURITYSESSIONID: '186a8',
+  _: '/usr/local/bin/node' }
+-----------------------
+gid: 20
+-----------------------
+uid: 501
+-----------------------
+pid: 2161
+-----------------------
+process title: node
+-----------------------
+uptime (sec): 0.454
+-----------------------
+arch: x64
+-----------------------
+versions:
+{ http_parser: '2.7.0',
+  node: '7.4.0',
+  v8: '5.4.500.45',
+  uv: '1.10.1',
+  zlib: '1.2.8',
+  ares: '1.10.1-DEV',
+  modules: '51',
+  openssl: '1.0.2j',
+  icu: '58.2',
+  unicode: '9.0',
+  cldr: '30.0.3',
+  tz: '2016j' }
+-----------------------
+memory usage:
+{ rss: 51818496,
+  heapTotal: 37826560,
+  heapUsed: 18902408,
+  external: 19303825 }
+-----------------------
+require.cache:
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/utils/content-types.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/utils/sys-info.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/express/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/express/lib/express.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/merge-descriptors/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/express/lib/application.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/finalhandler/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/debug/node.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/debug/debug.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/ms/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/escape-html/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/on-finished/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/ee-first/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/statuses/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/statuses/codes.json
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/unpipe/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/express/lib/router/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/express/lib/router/route.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/array-flatten/array-flatten.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/express/lib/router/layer.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/path-to-regexp/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/methods/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/utils-merge/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/depd/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/depd/lib/compat/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/parseurl/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/express/lib/middleware/init.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/express/lib/middleware/query.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/qs/lib/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/qs/lib/stringify.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/qs/lib/utils.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/qs/lib/parse.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/express/lib/view.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/express/lib/utils.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/content-disposition/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/content-type/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/send/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/http-errors/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/setprototypeof/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/inherits/inherits.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/destroy/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/encodeurl/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/etag/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/fresh/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mime/mime.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mime/types.json
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/range-parser/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/proxy-addr/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/forwarded/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/ipaddr.js/lib/ipaddr.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/express/lib/request.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/accepts/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/negotiator/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mime-types/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mime-db/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mime-db/db.json
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/type-is/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/media-typer/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/express/lib/response.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/cookie-signature/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/cookie/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/vary/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/serve-static/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/utils/credentials.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/morgan/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/basic-auth/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/on-headers/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bignumber.js/bignumber.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/json-bigint/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/json-bigint/lib/stringify.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/json-bigint/node_modules/bignumber.js/bignumber.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/json-bigint/lib/parse.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/cookie-parser/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/body-parser/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/shopify-node-api/lib/shopify.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/shopify-node-api/node_modules/json-bigint/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/shopify-node-api/node_modules/json-bigint/lib/stringify.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/shopify-node-api/node_modules/bignumber.js/bignumber.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/shopify-node-api/node_modules/json-bigint/lib/parse.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/routes/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/routes/install.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/schema.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/drivers/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/drivers/node-mongodb-native/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/drivers/node-mongodb-native/binary.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/bson.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/float_parser.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/map.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/long.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/double.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/timestamp.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/objectid.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/regexp.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/symbol.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/int_32.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/code.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/decimal128.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/min_key.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/max_key.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/db_ref.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/binary.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/parser/deserializer.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/parser/serializer.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bson/lib/bson/parser/calculate_size.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/error.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/connection/connection.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/connection/utils.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/require_optional/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/resolve-from/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/semver/semver.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/connection/commands.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/connection/logger.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/topologies/server.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/topologies/read_preference.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/connection/pool.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/connection/command_result.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/topologies/shared.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/package.json
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/auth/mongocr.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/auth/x509.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/auth/plain.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/auth/gssapi.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/auth/sspi.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/auth/scram.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/wireprotocol/2_4_support.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/wireprotocol/commands.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/wireprotocol/shared.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/wireprotocol/2_6_support.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/wireprotocol/3_2_support.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/cursor.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/topologies/replset.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/topologies/replset_state.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb-core/lib/topologies/mongos.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/apm.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/aggregation_cursor.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/metadata.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/cursor.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/utils.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/read_preference.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/command_cursor.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/bulk/ordered.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/bulk/common.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/bulk/unordered.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/gridfs/grid_store.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/gridfs/chunk.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/collection.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/db.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/admin.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/mongo_client.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/url_parser.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/server.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/topology_base.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/package.json
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/mongos.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/replset.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/gridfs-stream/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/gridfs-stream/download.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongodb/lib/gridfs-stream/upload.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/drivers/node-mongodb-native/objectid.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/drivers/node-mongodb-native/ReadPreference.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/virtualtype.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/utils.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/types/objectid.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/regexp-clone/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/sliced/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mpath/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mpath/lib/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/node_modules/ms/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/kareem/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/node_modules/async/each.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/node_modules/async/eachOf.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/isArrayLike.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/isFunction.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_baseGetTag.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_Symbol.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_root.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_freeGlobal.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_getRawTag.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_objectToString.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/isObject.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/isLength.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/node_modules/async/eachOfLimit.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/node_modules/async/internal/eachOfLimit.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/noop.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/node_modules/async/internal/once.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/node_modules/async/internal/iterator.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/node_modules/async/internal/getIterator.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/keys.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_arrayLikeKeys.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_baseTimes.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/isArguments.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_baseIsArguments.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/isObjectLike.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/isArray.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/isBuffer.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/stubFalse.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_isIndex.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/isTypedArray.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_baseIsTypedArray.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_baseUnary.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_nodeUtil.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_baseKeys.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_isPrototype.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_nativeKeys.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_overArg.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/node_modules/async/internal/onlyOnce.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/node_modules/async/internal/breakLoop.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/node_modules/async/internal/doLimit.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/node_modules/async/internal/withoutIndex.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/schematype.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/error.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/error/messages.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/error/cast.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/error/validation.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/error/validator.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/error/version.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/error/overwriteModel.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/error/missingSchema.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/error/divergentArray.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/schema/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/schema/string.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/schema/number.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/schema/operators/bitwise.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/schema/boolean.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/schema/documentarray.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/schema/array.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/schema/date.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/schema/objectid.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/schema/buffer.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/types/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/types/array.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/types/embedded.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/document_provider.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/document.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/schema/mixed.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/error/objectExpected.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/error/strict.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/internal.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/statemachine.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/hooks-fixed/hooks.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/promise_provider.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/promise.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mpromise/lib/promise.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/services/common.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/browserDocument.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/types/buffer.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/types/documentarray.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/types/subdocument.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/cast.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/schema/operators/helpers.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/schema/operators/geospatial.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/schema/embedded.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/connectionstate.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/query.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/querycursor.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/queryhelpers.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/querystream.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mquery/lib/mquery.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mquery/node_modules/sliced/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mquery/node_modules/sliced/lib/sliced.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mquery/lib/utils.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mquery/lib/permissions.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mquery/lib/env.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mquery/lib/collection/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mquery/lib/collection/node.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mquery/lib/collection/collection.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/bluebird.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/promise.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/util.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/es5.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/async.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/schedule.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/queue.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/errors.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/thenables.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/promise_array.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/captured_trace.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/debuggability.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/context.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/catch_filter.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/promise_resolver.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/progress.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/method.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/bind.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/finally.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/direct_resolve.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/synchronous_inspection.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/join.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/map.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/cancel.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/using.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/generators.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/nodeify.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/call_get.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/props.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/race.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/reduce.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/settle.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/some.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/promisify.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/any.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/each.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/timers.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/bluebird/js/main/filter.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/services/setDefaultsOnInsert.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/services/updateValidators.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/node_modules/async/parallel.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/node_modules/async/internal/parallel.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/node_modules/async/internal/rest.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_overRest.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/_apply.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/identity.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/model.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/aggregate.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/package.json
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/connection.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/collection.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/muri/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/muri/lib/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mongoose/lib/error/disconnected.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/models/shop.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/utils/shopify-request.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/ftp/lib/connection.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/ftp/lib/parser.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/xregexp/xregexp-all.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/csv2json.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/Converter.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/defParam.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/csvline.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/getEol.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/getDelimiter.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/fileline.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/rowSplit.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/dataToCSVLine.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/fileLineToCSVLine.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/linesToJson.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/parserMgr.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/parser.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/defaultParsers/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/defaultParsers/parser_array.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/defaultParsers/parser_json.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/defaultParsers/parser_omit.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/defaultParsers/parser_jsonarray.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/defaultParsers/parser_flat.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/CSVError.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/lodash/lodash.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/core/workerMgr.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/interfaces/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/interfaces/web/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/interfaces/web/webServer.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/interfaces/cli/index.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/csvtojson/libs/interfaces/cli/main.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/crashreporter/lib/crashreporter.js
+/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/node_modules/mkdirp/index.js
+-----------------------
+active handle:
+[ WriteStream {
+    connecting: false,
+    _hadError: false,
+    _handle: 
+     TTY {
+       bytesRead: 0,
+       _externalStream: {},
+       fd: 10,
+       writeQueueSize: 0,
+       owner: [Circular],
+       onread: [Function: onread] },
+    _parent: null,
+    _host: null,
+    _readableState: 
+     ReadableState {
+       objectMode: false,
+       highWaterMark: 16384,
+       buffer: [Object],
+       length: 0,
+       pipes: null,
+       pipesCount: 0,
+       flowing: null,
+       ended: false,
+       endEmitted: false,
+       reading: false,
+       sync: true,
+       needReadable: false,
+       emittedReadable: false,
+       readableListening: false,
+       resumeScheduled: false,
+       defaultEncoding: 'utf8',
+       ranOut: false,
+       awaitDrain: 0,
+       readingMore: false,
+       decoder: null,
+       encoding: null },
+    readable: false,
+    domain: null,
+    _events: 
+     { end: [Object],
+       finish: [Function: onSocketFinish],
+       _socketEnd: [Function: onSocketEnd] },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _writableState: 
+     WritableState {
+       objectMode: false,
+       highWaterMark: 16384,
+       needDrain: false,
+       ending: false,
+       ended: false,
+       finished: false,
+       decodeStrings: false,
+       defaultEncoding: 'utf8',
+       length: 0,
+       writing: false,
+       corked: 0,
+       sync: true,
+       bufferProcessing: false,
+       onwrite: [Function: bound onwrite],
+       writecb: null,
+       writelen: 0,
+       bufferedRequest: null,
+       lastBufferedRequest: null,
+       pendingcb: 0,
+       prefinished: false,
+       errorEmitted: false,
+       bufferedRequestCount: 0,
+       corkedRequestsFree: [Object] },
+    writable: true,
+    allowHalfOpen: false,
+    destroyed: false,
+    _bytesDispatched: 0,
+    _sockname: null,
+    _writev: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: null,
+    _server: null,
+    columns: 127,
+    rows: 48,
+    _type: 'tty',
+    fd: 1,
+    _isStdio: true,
+    destroySoon: [Function],
+    destroy: [Function] },
+  WriteStream {
+    connecting: false,
+    _hadError: false,
+    _handle: 
+     TTY {
+       bytesRead: 0,
+       _externalStream: {},
+       fd: 12,
+       writeQueueSize: 0,
+       owner: [Circular],
+       onread: [Function: onread] },
+    _parent: null,
+    _host: null,
+    _readableState: 
+     ReadableState {
+       objectMode: false,
+       highWaterMark: 16384,
+       buffer: [Object],
+       length: 0,
+       pipes: null,
+       pipesCount: 0,
+       flowing: null,
+       ended: false,
+       endEmitted: false,
+       reading: false,
+       sync: true,
+       needReadable: false,
+       emittedReadable: false,
+       readableListening: false,
+       resumeScheduled: false,
+       defaultEncoding: 'utf8',
+       ranOut: false,
+       awaitDrain: 0,
+       readingMore: false,
+       decoder: null,
+       encoding: null },
+    readable: false,
+    domain: null,
+    _events: 
+     { end: [Object],
+       finish: [Function: onSocketFinish],
+       _socketEnd: [Function: onSocketEnd] },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _writableState: 
+     WritableState {
+       objectMode: false,
+       highWaterMark: 16384,
+       needDrain: false,
+       ending: false,
+       ended: false,
+       finished: false,
+       decodeStrings: false,
+       defaultEncoding: 'utf8',
+       length: 0,
+       writing: false,
+       corked: 0,
+       sync: false,
+       bufferProcessing: false,
+       onwrite: [Function: bound onwrite],
+       writecb: null,
+       writelen: 0,
+       bufferedRequest: null,
+       lastBufferedRequest: null,
+       pendingcb: 1,
+       prefinished: false,
+       errorEmitted: false,
+       bufferedRequestCount: 0,
+       corkedRequestsFree: [Object] },
+    writable: true,
+    allowHalfOpen: false,
+    destroyed: false,
+    _bytesDispatched: 44,
+    _sockname: null,
+    _writev: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: null,
+    _server: null,
+    columns: 127,
+    rows: 48,
+    _type: 'tty',
+    fd: 2,
+    _isStdio: true,
+    destroySoon: [Function],
+    destroy: [Function] } ]
+-----------------------
+active request:
+[]
+-----------------------
+ReferenceError: router is not defined
+    at Object.<anonymous> (/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/routes/tracking.js:13:1)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/Users/federicocrivellaro/Desktop/TRABAJO/Blak/apps/glsorders/app.js:19:18)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
