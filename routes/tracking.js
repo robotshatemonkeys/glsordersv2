@@ -52,7 +52,6 @@ router.get('/',(req, res,next)=>{
             filesList.push(name);
           }
         } 
-        console.log(filesList.length+" files");
          if(filesList.length>0){
             getFile();
           }else{
@@ -106,6 +105,7 @@ router.get('/',(req, res,next)=>{
       if(fileIndex<filesList.length){
         getFile();
       }else{
+        c.end();
         res.status(200).send("done boy").end();
       }
     }
