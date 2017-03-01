@@ -133,7 +133,7 @@ router.get('/',(req, res,next)=>{
                 "tracking_number": orders[orderData.order_number],
                 "tracking_company": "Other",
                 "notify_customer":false,
-                "tracking_url":"https://www.gls-italy.com//?option=com_gls&view=track_e_trace&mode=search&numero_spedizione="+orders[orderData.order_number]+"&tipo_codice=nazionale"
+                "tracking_url":"https://www.gls-italy.com/?option=com_gls&view=track_e_trace&mode=search&numero_spedizione="+orders[orderData.order_number]+"&tipo_codice=nazionale"
              } 
             }
             
