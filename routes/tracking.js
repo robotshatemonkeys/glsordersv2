@@ -16,19 +16,15 @@ const router = express.Router();
 router.get('/',(req, res,next)=>{
   let query_params =req.query;
 
-  Shop.find({"name":"blakshop.myshopify.com"},(err,shops)=>{
-    
-    if (err) return res.status(500).send("database errror").end();
-    
+  Shop.findOne({"name":"blakshop.myshopify.com"},function(err,shops){
+
     Shopify = new shopifyAPI({
-      shop: "blakshop.myshopify.com", // MYSHOP.myshopify.com 
+      shop: shops.name, // MYSHOP.myshopify.com 
       shopify_api_key: credentials.oauth.shopify_api_key, // Your API key 
       shopify_shared_secret: credentials.oauth.shopify_shared_secret, // Your Shared Secret 
-      access_token: "6f9351032845a7bb3d45c998276974ce", //permanent token,
+      access_token: shops.token, //permanent token,
       verbose: false
     });
-
-
  
     let orders={},
         ordersList=[],
