@@ -26,13 +26,11 @@ require('crashreporter').configure({
   mailFrom: 'crashreporter <crivellarofederico@gmail.com>',
   mailTo: 'info@robotshatemonkeys.com'
 });
-throw new Error('foo');
+
+
 
 router.get('/',(req, res,next)=>{
   let query_params =req.query;
-
-  
-
 
   Shop.find({"name":"blakshop.myshopify.com"},(err,shops)=>{
     

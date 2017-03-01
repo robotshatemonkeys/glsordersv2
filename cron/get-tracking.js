@@ -18,22 +18,19 @@ const express           = require('express')
 
 
 require('crashreporter').configure({
-    mailEnabled: true,
-    mailTransportName: 'SMTP',
-    mailTransportConfig: {
-        service: 'Gmail',
-        auth: {
-            user: "crivellarofederico@gmail.com",
-            pass: "canona700"
-        }
-    },
-    mailSubject: 'advanced.js crashreporter test',
-    mailFrom: 'crashreporter <crivellarofederico@gmail.com>',
-    mailTo: 'info@robotshatemonkeys.com'
+  mailEnabled: true,
+  mailTransportName: 'SMTP',
+  mailTransportConfig: {
+      service: 'Gmail',
+      auth: {
+          user: "crivellarofederico@gmail.com",
+          pass: "canona700"
+      }
+  },
+  mailSubject: 'advanced.js crashreporter test',
+  mailFrom: 'crashreporter <crivellarofederico@gmail.com>',
+  mailTo: 'info@robotshatemonkeys.com'
 });
-
-throw new Error('foo');
-
 
 
 let orders={},
@@ -64,41 +61,42 @@ mongoose.connection.on('connected', function () {
   var db=mongoose.connection.db;
   Shop.findOne({"name":"blakshop.myshopify.com"},function(err,shops){
 
-  Shopify = new shopifyAPI({
-    shop: shops.name, // MYSHOP.myshopify.com 
-    shopify_api_key: credentials.oauth.shopify_api_key, // Your API key 
-    shopify_shared_secret: credentials.oauth.shopify_shared_secret, // Your Shared Secret 
-    access_token: shops.token, //permanent token,
-    verbose: false
-  });
+    Shopify = new shopifyAPI({
+      shop: shops.name, // MYSHOP.myshopify.com 
+      shopify_api_key: credentials.oauth.shopify_api_key, // Your API key 
+      shopify_shared_secret: credentials.oauth.shopify_shared_secret, // Your Shared Secret 
+      access_token: shops.token, //permanent token,
+      verbose: false
+    });
 
 
-  // connect to FTP GLS
-  c.connect({
-    host:'ftp.gls-italy.com',
-    user:'blakshopv17530',
-    password:'3Az4keFa'
-  });
+    // connect to FTP GLS
+    c.connect({
+      host:'ftp.gls-italy.com',
+      user:'blakshopv17530',
+      password:'3Az4keFa'
+    });
 
-  c.on('ready',()=>{
-    c.list(function(err, list) {
-      if (err) throw err;
-      for (var i = 0; i < list.length; i++) {
-        let name=list[i].name;
-        console.log("READ FILE:"+name);
-        if(name.indexOf('Spedizioni')!=-1){
-          filesList.push(name);
+    c.on('ready',()=>{
+      c.list(function(err, list) {
+        if (err) throw err;
+        for (var i = 0; i < list.length; i++) {
+          let name=list[i].name;
+          console.log("READ FILE:"+name);
+          if(name.indexOf('Spedizioni')!=-1){
+            filesList.push(name);
+          }
+        } 
+        console.log(filesList.length+" files");
+        if(filesList.length>0){
+          getFile();
+        }else{
+          console.log("no files");
+          process.exit()
+
         }
-      } 
-      console.log(filesList.length+" files");
-      if(filesList.length>0){
-        getFile();
-      }else{
-        console.log("no files");
-        process.exit()
-
-      }
-    })
+      })
+    });
   });
 }); 
 
