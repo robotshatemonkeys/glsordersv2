@@ -55,8 +55,6 @@ router.get('/finish_auth', function(req, res, next) {
 	      	token: data.access_token
 				}).save();
 			}
-
-			let removeUrl=path+credentials.oauth.remove_uri;
 			let webhooks=credentials.webhooks;
 
 			for (let i = 0; i < webhooks.length; i++) {
