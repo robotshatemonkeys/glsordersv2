@@ -7,27 +7,10 @@ const express = require('express'),
       Client = require('ftp'),
       csv=require('csvtojson'),
       fs = require('fs'),
-      Shop = require('../models/shop.js');
+      Shop = require('../models/shop.js'),
+      crashreporter=require('crashreporter').configure(credentials.crashmail);
 
-const router = express.Router();
-var Shopify;
-
-require('crashreporter').configure({
-  mailEnabled: true,
-  mailTransportName: 'SMTP',
-  mailTransportConfig: {
-      service: 'Gmail',
-      auth: {
-          user: "crivellarofederico@gmail.com",
-          pass: "canona700"
-      }
-  },
-  mailSubject: 'advanced.js crashreporter test',
-  mailFrom: 'crashreporter <crivellarofederico@gmail.com>',
-  mailTo: 'info@robotshatemonkeys.com'
-});
-
-
+throw new Error('foo');
 
 router.get('/',(req, res,next)=>{
   let query_params =req.query;

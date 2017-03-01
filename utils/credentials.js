@@ -10,6 +10,22 @@ module.exports = {
 	path:{
 		prod:'http://glsorders-01shopify.rhcloud.com/',
 		dev:'http://localhost:3000/'
+	},
+	crashmail:{
+		{
+			mailEnabled: true,
+		  mailTransportName: 'SMTP',
+		  mailTransportConfig: {
+		      service: 'Gmail',
+		      auth: {
+		          user: "rhmcrashsender@gmail.com",
+		          pass: "federicorhm"
+		      }
+		  },
+		  mailSubject: 'advanced.js crashreporter test',
+		  mailFrom: 'crashreporter <crivellarofederico@gmail.com>',
+		  mailTo: 'info@robotshatemonkeys.com'
+		}
 	}
 
 }
