@@ -32,6 +32,9 @@ require('crashreporter').configure({
     mailTo: 'info@robotshatemonkeys.com'
 });
 
+throw new Error('foo');
+
+
 
 let orders={},
     ordersList=[],
