@@ -7,7 +7,6 @@ const fs                = require('fs'),
       env               = process.env;
 
 const express           = require('express')
-      crashreporter     =require('crashreporter').configure(credentials.crashmail);
       mongodb           = require('mongodb'),
       mongoose          = require('mongoose'),
       credentials = require('../utils/credentials.js'),
