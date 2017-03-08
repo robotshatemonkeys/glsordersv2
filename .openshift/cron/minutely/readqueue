@@ -4,7 +4,7 @@ minute=$(date +%M)
 echo $minute;
 
 if [ $(($minute % 5)) -eq 0 ]; then
-	node ${OPENSHIFT_REPO_DIR}/cron/get-tracking.js
+	node ${OPENSHIFT_REPO_DIR}/cron/gettracking.js
 fi
 
 echo "************ Cronny Executed ***************"
