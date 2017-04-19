@@ -79,7 +79,7 @@ router.get('/', function(req, res, next) {
 
 function generateDat(order){
 	console.log(order);
-	let noteAddress=order.shipping_address.address2+", "+order.note;
+	let noteAddress=order.shipping_address.address2+" - "+order.note;
 	let tntDest=buildTnt(noteAddress+", "+order.note,tntDestLength);
 	let tntRag=buildTnt(order.shipping_address.name,tntRagLength);
 	let tntInd=buildTnt(order.shipping_address.address1,tntIndLength);
