@@ -84,7 +84,7 @@ function generateDat(order){
 	}
 	var company=order.shipping_address.company;
 	if(company!=null && company!="undefined"){
-		noteAddress=noteAddress+" - "company;
+		noteAddress=noteAddress+" - "+company;
 	}
 	noteAddress=order.shipping_address.address2+" - "+order.note;
 	
