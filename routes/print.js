@@ -78,14 +78,18 @@ router.get('/', function(req, res, next) {
 
 
 function generateDat(order){
-	var noteAddress=order.shipping_address.address2;
-	if(order.note!=null && order.note!="undefined"){
-		noteAddress=order.shipping_address.address2+" - "+order.note;
+	var noteAddress="";
+	
+	var address2=order.shipping_address.address2;
+	if(address2!=null && address2!="undefined"){
+		noteAddress=address2;
 	}
-	noteAddress=order.shipping_address.address2+" - "+order.note;
+
+	if(order.note!=null && order.note!="undefined"){
+		noteAddress=noteAddress+" - "+order.note;
+	}
 
 	var company=order.shipping_address.company;
-	console.log(company);
 	if(company!=null && company!="undefined"){
 		noteAddress=noteAddress+" - "+company;
 	}
