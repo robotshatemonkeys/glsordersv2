@@ -82,11 +82,13 @@ function generateDat(order){
 	if(order.note!=null && order.note!="undefined"){
 		noteAddress=order.shipping_address.address2+" - "+order.note;
 	}
+	noteAddress=order.shipping_address.address2+" - "+order.note;
+
 	var company=order.shipping_address.company;
+	console.log(company);
 	if(company!=null && company!="undefined"){
 		noteAddress=noteAddress+" - "+company;
 	}
-	noteAddress=order.shipping_address.address2+" - "+order.note;
 	
 	let tntDest=buildTnt(noteAddress,tntDestLength);
 	let tntRag=buildTnt(order.shipping_address.name,tntRagLength);
