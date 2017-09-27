@@ -6,7 +6,10 @@ var express = require('express'),
     app = express();
 
 var index = require('./routes/index'),
-    install = require('./routes/install');
+    install = require('./routes/install'),
+    tracking = require('./routes/tracking'),
+    print = require('./routes/print'),
+    printui = require('./routes/printui');
 
 var handlebars = require('express-handlebars').create({
     defaultLayout:'main',
@@ -35,9 +38,10 @@ app.use(function(err, req, res, next){
 });
 
 
-
-
 app.use('/',index);
 app.use('/install',install);
+app.use('/tracking', tracking);
+app.use('/print', print);
+app.use('/printui', printui);
 
 module.exports = app;
