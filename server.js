@@ -58,19 +58,6 @@ var initDb = function(callback) {
       return;
     }
   );
-
-  /*
-  mongodb.connect(mongoURL, function(err) {
-    if (err) {
-      callback(err);
-      return;
-    }
-    console.log('Connected to MongoDB at: %s', mongoURL);
-    db = conn;
-    dbDetails.databaseName = db.databaseName;
-    dbDetails.url = mongoURLLabel;
-    dbDetails.type = 'MongoDB';
-  });*/
 };
 
 if (!db) {
@@ -78,6 +65,9 @@ if (!db) {
     console.log('Error connecting to Mongo. Message:\n'+err);
   });
 }
-
 app.listen(port, ip);
 console.log('Server running on http://%s:%s', ip, port);
+
+
+// EXPORTED APP FOR TESTING. 
+module.exports = app;

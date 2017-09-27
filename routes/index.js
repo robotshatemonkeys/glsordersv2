@@ -7,8 +7,9 @@ router.get('/', function(req, res, next) {
   	if(query_params.shop){
   		res.render('home',{"url":'https://'+query_params.shop+'/admin/orders'});
   	}else{
-  		res.redirect('/install/auth');
+      res.redirect('/install/auth');
   	}
 });
+
 
 module.exports = router;

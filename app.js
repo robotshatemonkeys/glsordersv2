@@ -1,13 +1,12 @@
 var express = require('express'),
     morgan  = require('morgan'),
     path    = require('path'),
+    cookieParser = require('cookie-parser'),
+    bodyParser = require('body-parser'),
     app = express();
 
-var routes = require('./routes/index'),
-    install = require('./routes/install');/*
-    tracking = require('./routes/tracking'),
-    print = require('./routes/print'),
-    printui = require('./routes/printui');*/
+var index = require('./routes/index'),
+    install = require('./routes/install');
 
 var handlebars = require('express-handlebars').create({
     defaultLayout:'main',
@@ -23,24 +22,11 @@ var handlebars = require('express-handlebars').create({
 app.use(morgan('combined'));
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
 app.use(express.static(path.join(__dirname, './public')));
-
-
-app.get('/pagecount', function (req, res) {
-  res.status(200);
-  /*
-  if (!db) {
-    initDb(function(err){});
-  }
-  if (db) {
-    db.collection('counts').count(function(err, count ){
-      res.send('{ pageCount: ' + count + '}');
-    });
-  } else {
-    res.send('{ pageCount: -1 }');
-  }
-  */
-});
 
 // error handling
 app.use(function(err, req, res, next){
@@ -51,11 +37,7 @@ app.use(function(err, req, res, next){
 
 
 
-app.use('/', routes);
-app.use('/install', install);
-/*
-app.use('/tracking', tracking);
-app.use('/print', print);
-app.use('/printui', printui);*/
+app.use('/',index);
+app.use('/install',install);
 
 module.exports = app;

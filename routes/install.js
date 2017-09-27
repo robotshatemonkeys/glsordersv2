@@ -22,9 +22,9 @@ router.get('/finish_auth', function(req, res, next) {
 	 		url=path+credentials.oauth.redirect_uri;
 
 	var Shopify = new shopifyAPI({
-	    shop:query_params.shop, // MYSHOP.myshopify.com 
-	    shopify_api_key: credentials.oauth.shopify_api_key, // Your API key 
-	    shopify_shared_secret: credentials.oauth.shopify_shared_secret, // Your Shared Secret 
+	    shop:query_params.shop, // MYSHOP.myshopify.com
+	    shopify_api_key: credentials.oauth.shopify_api_key, // Your API key
+	    shopify_shared_secret: credentials.oauth.shopify_shared_secret, // Your Shared Secret
 	    shopify_scope: credentials.oauth.shopify_scope,
 	    redirect_uri: url,
 	    nonce: credentials.oauth.nonce,
@@ -34,13 +34,13 @@ router.get('/finish_auth', function(req, res, next) {
   Shopify.exchange_temporary_token(query_params, function(err, data){
   	// SAVE IN DATABASE;
   	if (err) return res.send(500, { error: err });
-	
+
 		var update = {
 			name: query_params.shop,
 			token: data.access_token
 	  };
     var options = {
-      new: true, // return the new doc 
+      new: true, // return the new doc
       upsert: true, // add a new doc if doesn't exit
       setDefaultsOnInsert: true
     };
@@ -58,7 +58,7 @@ router.get('/finish_auth', function(req, res, next) {
 			let webhooks=credentials.webhooks;
 
 			for (let i = 0; i < webhooks.length; i++) {
-				Shopify.post('/admin/webhooks.json',webhooks[i], function(err, data, headers){				
+				Shopify.post('/admin/webhooks.json',webhooks[i], function(err, data, headers){
 					if(err)console.log(err);
 					if(err)console.log(data);
 				});
@@ -71,11 +71,11 @@ router.get('/finish_auth', function(req, res, next) {
 router.post('/process', function(req, res){
   	let name=req.body.name,
 				url=path+credentials.oauth.redirect_uri;
-  	
+
   	var Shopify = new shopifyAPI({
-	    shop: name, // MYSHOP.myshopify.com 
-	    shopify_api_key: credentials.oauth.shopify_api_key, // Your API key 
-	    shopify_shared_secret: credentials.oauth.shopify_shared_secret, // Your Shared Secret 
+	    shop: name, // MYSHOP.myshopify.com
+	    shopify_api_key: credentials.oauth.shopify_api_key, // Your API key
+	    shopify_shared_secret: credentials.oauth.shopify_shared_secret, // Your Shared Secret
 	    shopify_scope: credentials.oauth.shopify_scope,
 	    redirect_uri: url,
 	    nonce: credentials.oauth.nonce,
@@ -91,12 +91,12 @@ router.get('/thank-you', function(req, res, next) {
 
 
 /*------------------------
-DELETE APP 
+DELETE APP
 --------------------------*/
 router.post('/delete', function(req, res) {
 	res.sendStatus(200);
 	let name=req.body.myshopify_domain;
-	Shop.findOne({"name":name}).remove().exec();	
+	Shop.findOne({"name":name}).remove().exec();
 	res.end();
 });
 
