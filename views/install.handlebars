@@ -1,0 +1,22 @@
+<div class="centerMe centerText install">
+    <img src="/imgs/logo60.png" alt="Musgo GLS Orders Printer Logo">
+    <h1>Musgo GLS Orders Printer Install</h1>
+    <div class="formContainer">
+        <form class="form installForm" role="form" 
+                action="/install/process?form=install" method="POST">
+            <input type="hidden" name="_csrf" value="{{csrf}}">
+            <div class="row form-group">
+                <label for="fieldName" class="col-xs-12 control-label">Shop Name ( without .myshopify.com )</label>
+                <div class="col-xs-12">
+                    <input type="text" class="form-control" id="fieldName" name="name" placeholder="shop name" required >
+                </div>
+            </div>
+            
+            <div class="row form-group">
+                <div class="col-xs-offset-3 col-xs-6">
+                    <button type="submit" class="btn">Install</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>    

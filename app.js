@@ -1,9 +1,10 @@
 var express = require('express'),
     morgan  = require('morgan'),
+    path    = require('path'),
     app = express();
 
-/*var routes = require('./routes/index'),
-    install = require('./routes/install'),
+var routes = require('./routes/index'),
+    install = require('./routes/install');/*
     tracking = require('./routes/tracking'),
     print = require('./routes/print'),
     printui = require('./routes/printui');*/
@@ -20,23 +21,10 @@ var handlebars = require('express-handlebars').create({
 });
 
 app.use(morgan('combined'));
-app.engine('html', require('ejs').renderFile);
+app.engine('handlebars', handlebars.engine);
+app.set('view engine', 'handlebars');
+app.use(express.static(path.join(__dirname, './public')));
 
-
-app.get('/', function (req, res) {
-  console.log("inside");
-  res.render('index.html', { pageCountMessage : null});
-  /*if (db) {
-    var col = db.collection('counts');
-    // Create a document with request IP and current time of request
-    col.insert({ip: req.ip, date: Date.now()});
-    col.count(function(err, count){
-      res.render('index.html', { pageCountMessage : count, dbInfo: dbDetails });
-    });
-  } else {
-    res.render('index.html', { pageCountMessage : null});
-  }*/
-});
 
 app.get('/pagecount', function (req, res) {
   res.status(200);
@@ -62,13 +50,12 @@ app.use(function(err, req, res, next){
 
 
 
-console.log('Server running on http://%s:%s', ip, port);
 
-/*
 app.use('/', routes);
 app.use('/install', install);
-app.use('/tracking', tracking),
-app.use('/print', print),
-app.use('/printui', printui)*/
+/*
+app.use('/tracking', tracking);
+app.use('/print', print);
+app.use('/printui', printui);*/
 
 module.exports = app;

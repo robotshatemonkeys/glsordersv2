@@ -38,19 +38,39 @@ var initDb = function(callback) {
   var mongodb = require('mongodb');
   if (mongodb == null) return;
 
-  mongodb.connect(mongoURL, function(err, conn) {
+  let options = {
+    server: {
+      socketOptions: { keepAlive: 1 }
+    }
+  };
+
+  mongoose.connect(mongoURL, options).then(
+    () => {
+      console.log('Connected to MongoDB at: %s', mongoURL);
+      db = conn;
+      dbDetails.databaseName = db.databaseName;
+      dbDetails.url = mongoURLLabel;
+      dbDetails.type = 'MongoDB';
+    },
+    err => {
+      console.log(err);
+      callback(err);
+      return;
+    }
+  );
+
+  /*
+  mongodb.connect(mongoURL, function(err) {
     if (err) {
       callback(err);
       return;
     }
-    
+    console.log('Connected to MongoDB at: %s', mongoURL);
     db = conn;
     dbDetails.databaseName = db.databaseName;
     dbDetails.url = mongoURLLabel;
     dbDetails.type = 'MongoDB';
-
-    console.log('Connected to MongoDB at: %s', mongoURL);
-  });
+  });*/
 };
 
 if (!db) {
@@ -60,3 +80,4 @@ if (!db) {
 }
 
 app.listen(port, ip);
+console.log('Server running on http://%s:%s', ip, port);
