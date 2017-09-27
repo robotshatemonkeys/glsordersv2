@@ -4,14 +4,21 @@
   "description": "Node.js sample app for OpenShift 3",
   "main": "server.js",
   "dependencies": {
+    "bignumber.js": "^4.1.0",
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
+    "csvtojson": "^1.1.7",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "ftp": "^0.3.10",
+    "json-bigint": "^0.2.3",
     "mocha": "^2.4.5",
     "mongodb": "^2.1.16",
+    "mongoose": "^4.11.13",
     "morgan": "^1.7.0",
-    "object-assign":"4.1.0"
+    "object-assign": "4.1.0",
+    "shopify-node-api": "^1.8.0"
   },
   "engine": {
     "node": "*",
