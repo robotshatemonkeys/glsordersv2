@@ -2,21 +2,21 @@
   "kind": "Template",
   "apiVersion": "v1",
   "metadata": {
-    "name": "nodejs-example",
+    "name": "gls-tracking",
     "annotations": {
       "openshift.io/display-name": "Node.js",
-      "description": "An example Node.js application with no database. For more information about using this template, including OpenShift considerations, see https://github.com/openshift/nodejs-ex/blob/master/README.md.",
+      "description": "An example Node.js application with no database. For more information about using this template, including OpenShift considerations, see hhttps://github.com/robotshatemonkeys/glsordersv2/blob/master/README.md.",
       "tags": "quickstart,nodejs",
       "iconClass": "icon-nodejs",
       "template.openshift.io/long-description": "This template defines resources needed to develop a NodeJS application, including a build configuration and application deployment configuration.  It does not include a database.",
       "template.openshift.io/provider-display-name": "Red Hat, Inc.",
-      "template.openshift.io/documentation-url": "https://github.com/openshift/nodejs-ex",
+      "template.openshift.io/documentation-url": "hhttps://github.com/robotshatemonkeys/glsordersv2",
       "template.openshift.io/support-url": "https://access.redhat.com"
     }
   },
-  "message": "The following service(s) have been created in your project: ${NAME}.\n\nFor more information about using this template, including OpenShift considerations, see https://github.com/openshift/nodejs-ex/blob/master/README.md.",
+  "message": "The following service(s) have been created in your project: ${NAME}.\n\nFor more information about using this template, including OpenShift considerations, see hhttps://github.com/robotshatemonkeys/glsordersv2/blob/master/README.md.",
   "labels": {
-    "template": "nodejs-example"
+    "template": "gls-tracking"
   },
   "objects": [
     {
@@ -154,7 +154,7 @@
             "imageChangeParams": {
               "automatic": true,
               "containerNames": [
-                "nodejs-example"
+                "gls-tracking"
               ],
               "from": {
                 "kind": "ImageStreamTag",
@@ -180,7 +180,7 @@
           "spec": {
             "containers": [
               {
-                "name": "nodejs-example",
+                "name": "gls-tracking",
                 "image": " ",
                 "ports": [
                   {
@@ -228,7 +228,7 @@
       "displayName": "Name",
       "description": "The name assigned to all of the frontend objects defined in this template.",
       "required": true,
-      "value": "nodejs-example"
+      "value": "gls-tracking"
     },
     {
       "name": "NAMESPACE",
@@ -249,7 +249,7 @@
       "displayName": "Git Repository URL",
       "description": "The URL of the repository with your application source code.",
       "required": true,
-      "value": "https://github.com/openshift/nodejs-ex.git"
+      "value": "hhttps://github.com/robotshatemonkeys/glsordersv2.git"
     },
     {
       "name": "SOURCE_REPOSITORY_REF",
